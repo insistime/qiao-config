@@ -11,8 +11,7 @@
     "database"
   ],
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": {
     "name": "qiaowenbin",
     "email": "npm@insistime.com",
@@ -24,7 +23,7 @@
     "url": "git+https://github.com/insistime/qiao-config.git"
   },
   "dependencies": {
+    "qiao.util.file": "^0.1.2"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
