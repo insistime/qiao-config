@@ -3,13 +3,13 @@
 var q = require('../lib/qiao-config');
 
 // set
-q.c('test', 'hello');
+q.config('test', 'hello');
 console.log(q.all());
 
 // get
-var s = q.c('test');
+var s = q.config('test');
 console.log(s);
 
 // del
-q.c('test', null);
+q.config('test', null);
 console.log(q.all());
