@@ -1,6 +1,9 @@
 # qiao-config
 json config to local file
 
+## donate
+[http://uikoo9.com/donate](http://uikoo9.com/donate)
+
 ## api
 ### all
 ```javascript
@@ -21,22 +24,22 @@ var q = require('qiao-config');
 q.clear();
 ```
 
-### c
+### config
 ```javascript
 'use strict';
 
 var q = require('qiao-config');
 
 // set
-q.c('test', 'hello');
+q.config('test', 'hello');
 console.log(q.all());
 
 // get
-var s = q.c('test');
+var s = q.config('test');
 console.log(s);
 
 // del
-q.c('test', null);
+q.config('test', null);
 console.log(q.all());
 ```
 
