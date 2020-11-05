@@ -2,14 +2,16 @@
 
 var q = require('../lib/qiao-config');
 
+var db = q.db();
+
 // set
-q.config('test', 'hello');
-console.log(q.all());
+db.config('test', 'hello');
+console.log(db.all()); // { test: 'hello' }
 
 // get
-var s = q.config('test');
+var s = db.config('test');
 console.log(s);
 
-// del
-q.config('test', null);
-console.log(q.all());
+// // del
+// q.config('test', null);
+// console.log(q.all());
