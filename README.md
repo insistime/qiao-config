@@ -5,14 +5,30 @@ json config to local file
 [http://uikoo9.com/donate](http://uikoo9.com/donate)
 
 ## api
+### c
+```javascript
+'use strict';
+
+var q = require('qiao-config');
+
+// default path
+var _c1 = q.c();
+console.log(_c1);
+
+// custom path
+var _c2 = q.c('../');
+console.log(_c2);
+```
+
 ### all
 ```javascript
 'use strict';
 
 var q = require('qiao-config');
 
-var s = q.all();
-console.log(s);
+var _c  = q.c();
+var s   = _c.all();
+console.log(s); // { test: 'hello' }
 ```
 
 ### clear
@@ -21,7 +37,9 @@ console.log(s);
 
 var q = require('qiao-config');
 
-q.clear();
+var _c = q.c();
+_c.clear();
+console.log(_c.all()); // {}
 ```
 
 ### config
@@ -30,17 +48,19 @@ q.clear();
 
 var q = require('qiao-config');
 
+var _c = q.c();
+
 // set
-q.config('test', 'hello');
-console.log(q.all());
+_c.config('test', 'hello');
+console.log(_c.all()); // { test: 'hello' }
 
 // get
-var s = q.config('test');
-console.log(s);
+var s = _c.config('test');
+console.log(s); // hello
 
 // del
-q.config('test', null);
-console.log(q.all());
+_c.config('test', null);
+console.log(_c.all()); // {}
 ```
 
 ## version
