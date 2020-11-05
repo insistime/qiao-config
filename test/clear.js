@@ -2,8 +2,6 @@
 
 var q = require('../lib/qiao-config');
 
-var db  = q.db();
-db.clear();
-
-// {}
-console.log(db.all());
+var _c = q.c();
+_c.clear();
+console.log(_c.all());// {}
