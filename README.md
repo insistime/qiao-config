@@ -44,6 +44,9 @@ console.log(q.all());
 ```
 
 ## version
+### 0.0.3.20201105
+1. c --> config
+
 ### 0.0.2.20200901
 1. del ok
 2. c ok
