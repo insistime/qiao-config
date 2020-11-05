@@ -1,6 +1,6 @@
 {
   "name": "qiao-config",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "description": "json config to local file",
   "keywords": [

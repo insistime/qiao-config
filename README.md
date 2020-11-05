@@ -66,6 +66,7 @@ console.log(_c.all()); // {}
 ## version
 ### 0.0.3.20201105
 1. c --> config
+2. custom path
 
 ### 0.0.2.20200901
 1. del ok
